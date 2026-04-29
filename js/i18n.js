@@ -13,8 +13,6 @@ const translations = {
   nav_venue:          { es: "Sede y alojamiento",  en: "Venue & Hotels" },
   nav_editions:       { es: "Ediciones anteriores",en: "Previous Editions" },
   nav_contact:        { es: "Contacto",            en: "Contact" },
-  //lang_btn:           { es: "EN",                  en: "ES" },
-  lang_btn_title:     { es: "Switch to English",   en: "Cambiar a Español" },
 
   // ── index.html ───────────────────────────────────────────────
   index_title:        { es: "V Congreso Español de Videojuegos",
@@ -33,10 +31,10 @@ const translations = {
                         en: "Last but not least, the conference encourages future developers and researchers to participate by presenting their <b>Bachelor's Theses, Master's Theses or Theses in progress</b> within the field of video games." },
 
   // ── submit.html ──────────────────────────────────────────────
-  submit_hero:        { es: "Envío de trabajos",   en: "Paper Submission" },
-  submit_dates_h:     { es: "Fechas importantes",  en: "Important Dates" },
-  submit_regular_label: { es: "Trabajos regulares y trabajos cortos:",
-                          en: "Regular papers and short papers:" },
+  submit_hero:              { es: "Envío de trabajos",   en: "Paper Submission" },
+  submit_dates_h:           { es: "Fechas importantes",  en: "Important Dates" },
+  submit_regular_label:     { es: "Trabajos regulares y trabajos cortos:",
+                              en: "Regular papers and short papers:" },
   submit_date_reception:    { es: "Recepción de trabajos: 14 de junio de 2026",       en: "Submission deadline: June 14, 2026" },
   submit_date_notif:        { es: "Notificación a los autores: 15 de julio de 2026",   en: "Author notification: July 15, 2026" },
   submit_date_final:        { es: "Versión definitiva de los trabajos aceptados: 25 de julio de 2026", en: "Camera-ready deadline: July 25, 2026" },
@@ -45,9 +43,9 @@ const translations = {
   submit_date_reception2:   { es: "Recepción de trabajos: 12 de julio de 2026",       en: "Submission deadline: July 12, 2026" },
   submit_date_notif2:       { es: "Notificación a los autores: 19 de julio de 2026",   en: "Author notification: July 19, 2026" },
   submit_date_final2:       { es: "Versión definitiva de los trabajos aceptados: 25 de julio de 2026", en: "Camera-ready deadline: July 25, 2026" },
-  submit_topics_h:    { es: "Temas de interés",   en: "Topics of Interest" },
-  submit_topics_intro:{ es: "Se invita a los investigadores y profesionales a enviar sus contribuciones en el campo del entretenimiento digital, tanto trabajos originales de investigación como desarrollos tecnológicos de aplicaciones relacionados con los siguientes temas:",
-                        en: "Researchers and professionals are invited to submit their contributions in the field of digital entertainment, including original research works and technological developments related to the following topics:" },
+  submit_topics_h:          { es: "Temas de interés",   en: "Topics of Interest" },
+  submit_topics_intro:      { es: "Se invita a los investigadores y profesionales a enviar sus contribuciones en el campo del entretenimiento digital, tanto trabajos originales de investigación como desarrollos tecnológicos de aplicaciones relacionados con los siguientes temas:",
+                              en: "Researchers and professionals are invited to submit their contributions in the field of digital entertainment, including original research works and technological developments related to the following topics:" },
   submit_t1:  { es: "Accesibilidad",                         en: "Accessibility" },
   submit_t2:  { es: "Aspectos culturales del diseño de videojuegos", en: "Cultural aspects of video game design" },
   submit_t3:  { es: "Arte y entretenimiento",                en: "Art and entertainment" },
@@ -116,7 +114,38 @@ const translations = {
                         en: "Registration of at least one author is required for the presentation of accepted papers at the congress. Registration <b>covers up to 2 papers</b> and includes SECiVi membership (<a href=\"http://secivi.org\" target=\"_blank\">Spanish Society for Video Game Sciences</a>) for 2 years." },
   reg_p2:             { es: "La asistencia a las presentaciones es gratuita, aunque es necesario inscribirse.",
                         en: "Attendance at presentations is free of charge, though registration is required." },
-  reg_p3:             { es: "En proceso de publicación...", en: "To be announced..." },
+  // button
+  reg_btn:            { es: "Inscríbete aquí",       en: "Register here" },
+  // fees table
+  reg_fees_h:         { es: "Tarifas de inscripción", en: "Registration Fees" },
+  reg_fees_before:    { es: "Hasta el 28 de julio", en: "Until July 28" },
+  reg_fees_after:     { es: "Después del 28 de julio", en: "After July 28" },
+  reg_fee_standard:   { es: "Ordinaria",             en: "Standard" },
+  reg_fee_reduced:    { es: "Reducida",              en: "Reduced" },
+  reg_fee_student:    { es: "Estudiante",            en: "Student" },
+  reg_fee_listener:   { es: "Oyente",                en: "Listener" },
+  reg_fee_note1:      { es: "<sup>*</sup>No incluye la cena del congreso",
+                        en: "<sup>*</sup>Does not include the conference dinner" },
+  reg_fee_note2:      { es: "<sup>**</sup>Sin publicación en las actas del congreso",
+                        en: "<sup>**</sup>Without publication in the conference proceedings" },
+  // payment
+  reg_payment_p:      { es: "Para que el alta sea efectiva, se debe enviar por correo electrónico a <a href=\"mailto:cev@secivi.org\">cev@secivi.org</a> el justificante de pago de la inscripción en cualquiera de los siguientes formatos: PDF, JPEG, GIF, TIFF o PNG. El pago debe realizarse a la siguiente cuenta:",
+                        en: "To complete your registration, please send the proof of payment to <a href=\"mailto:cev@secivi.org\">cev@secivi.org</a> in any of the following formats: PDF, JPEG, GIF, TIFF or PNG. Payment must be made to the following account:" },
+  reg_bank_lbl:       { es: "Banco de Santander",    en: "Bank" },
+  reg_bank_val:       { es: "Banco de Santander",    en: "Banco de Santander" },
+  reg_beneficiary_lbl:{ es: "Beneficiario",          en: "Beneficiary" },
+  reg_beneficiary_val:{ es: "Sociedad Española para las Ciencias del Videojuego",
+                        en: "Sociedad Española para las Ciencias del Videojuego" },
+  reg_concept_lbl:    { es: "Concepto",              en: "Reference" },
+  reg_concept_val:    { es: "Nombre y Apellidos - CEV'26", en: "Full Name - CEV'26" },
+  reg_extra_p:        { es: "Por si fuera necesario para realizar el pago, los datos del beneficiario son:",
+                        en: "If required to complete the payment, the beneficiary details are:" },
+  reg_name_lbl:       { es: "Nombre",                en: "Name" },
+  reg_name_val:       { es: "Sociedad Española para las Ciencias del Videojuego",
+                        en: "Sociedad Española para las Ciencias del Videojuego" },
+  reg_address_lbl:    { es: "Domicilio fiscal",      en: "Registered address" },
+  reg_address_val:    { es: "C/ Profesor José García Santesmases, 9 - 28040 - Madrid",
+                        en: "C/ Profesor José García Santesmases, 9 - 28040 - Madrid" },
 
   // ── program.html ─────────────────────────────────────────────
   prog_hero:          { es: "Programa",              en: "Programme" },
@@ -133,11 +162,19 @@ const translations = {
   venue_near_centre:  { es: "Cerca del centro de la ciudad",  en: "Near the city centre" },
   venue_city_centre:  { es: "Centro de la ciudad",            en: "City centre" },
   venue_far_centre:   { es: "Lejos del centro de la ciudad, pero bien comunicado", en: "Away from the city centre, but well connected" },
-  venue_metro:        { es: "Metro Línea 6",      en: "Metro Line 6" },
-  venue_bus:          { es: "Bus",                en: "Bus" },
-  venue_walk:         { es: "Caminando",          en: "Walking" },
-  venue_to_fac:       { es: "aprox. {0} minutos hasta la Fac. de Ciencias de la Información",
-                        en: "approx. {0} minutes to the Faculty of Information Sciences" },
+  venue_metro:        { es: "Metro Línea 6",         en: "Metro Line 6" },
+  venue_bus_line:     { es: "Bus",                   en: "Bus" },
+  venue_walk:         { es: "Caminando",             en: "Walking" },
+  venue_night:        { es: "noche",                 en: "night" },
+  venue_double_room:  { es: "habitación doble",      en: "double room" },
+  venue_apartment:    { es: "apartamento",           en: "apartment" },
+  venue_no_breakfast: { es: "sin desayuno",          en: "without breakfast" },
+  venue_with_breakfast:{ es: "con desayuno",         en: "with breakfast" },
+  venue_double:       { es: "doble",                 en: "double" },
+  venue_minutes:      { es: "minutos",               en: "minutes" },
+  venue_approx:       { es: "aprox.",                en: "approx." },
+  venue_to_faculty:   { es: "hasta la Fac. de Ciencias de la Información",
+                        en: "to the Faculty of Information Sciences" },
 
   // ── edanteriores.html ────────────────────────────────────────
   ed_hero:            { es: "Ediciones anteriores", en: "Previous Editions" },
@@ -166,12 +203,6 @@ function setLang(lang) {
   localStorage.setItem('cev_lang', lang);
 }
 
-function t(key) {
-  const lang = getLang();
-  if (!translations[key]) return key;
-  return translations[key][lang] || translations[key]['es'];
-}
-
 function applyTranslations() {
   const lang = getLang();
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -180,34 +211,13 @@ function applyTranslations() {
       el.innerHTML = translations[key][lang] || translations[key]['es'];
     }
   });
-  // update html lang attr
   document.documentElement.lang = lang;
-  // update button label
-  const btn = document.getElementById('lang-toggle');
-  if (btn) {
-    btn.textContent  = translations['lang_btn'][lang];
-    btn.title        = translations['lang_btn_title'][lang];
-  }
 }
 
+// Called by the flag buttons with an explicit target language
 function toggleLang(lang) {
   setLang(lang);
   applyTranslations();
 }
 
 document.addEventListener('DOMContentLoaded', applyTranslations);
-
-// ── venue_hotels extras ──────────────────────────────────────
-const venue_extra = {
-  venue_night:            { es: "noche",          en: "night" },
-  venue_double_room:      { es: "habitación doble", en: "double room" },
-  venue_apartment:        { es: "apartamento",    en: "apartment" },
-  venue_no_breakfast:     { es: "sin desayuno",   en: "without breakfast" },
-  venue_with_breakfast:   { es: "con desayuno",   en: "with breakfast" },
-  venue_double:           { es: "doble",          en: "double" },
-  venue_minutes:          { es: "minutos",        en: "minutes" },
-  venue_approx:           { es: "aprox.",         en: "approx." },
-  venue_to_faculty:       { es: "hasta la Fac. de Ciencias de la Información", en: "to the Faculty of Information Sciences" },
-  venue_bus_line:         { es: "Bus",            en: "Bus" },
-};
-Object.assign(translations, venue_extra);

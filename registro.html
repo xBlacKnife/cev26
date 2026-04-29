@@ -93,16 +93,14 @@
                             <li><a href="contacto.html" data-i18n="nav_contact">...</a></li>
                             <!-- Language Toggle -->
                             <li style="padding:5px 0px;">
-                                <button id="lang-toggle" onclick="toggleLang('es')"
+                                <button onclick="toggleLang('es')"
                                     title="Cambiar a español"
-                                    style="background:none;border:none;
-                                           color:inherit;cursor:pointer;">
-                                           <img src="img/lang_es.png" style="width:30px"></button>
-                                <button id="lang-toggle" onclick="toggleLang('en')"
+                                    style="background:none;border:none;color:inherit;cursor:pointer;">
+                                    <img src="img/lang_es.png" style="width:30px"></button>
+                                <button onclick="toggleLang('en')"
                                     title="Switch to English"
-                                    style="background:none;border:none;
-                                           color:inherit;cursor:pointer;">
-                                           <img src="img/lang_en.png" style="width:30px"></button>
+                                    style="background:none;border:none;color:inherit;cursor:pointer;">
+                                    <img src="img/lang_en.png" style="width:30px"></button>
                             </li>
                             <!-- End Language Toggle -->
                         </ul>
@@ -116,16 +114,13 @@
             <main id="main">    
             
                 <!-- Home Section -->
-                    <!--section class="home-section bg-dark-alfa-70 parallax-3 light-content" data-background="img/alhambra.jpg" id="home">
-                    <div class="container fixed-height-medium d-flex align-items-center"-->
-                    <section class="page-section bg-dark-alfa-70 parallax-3 light-content" data-background="img/madrid.jpeg" id="home">
+                <section class="page-section bg-dark-alfa-70 parallax-3 light-content" data-background="img/madrid.jpeg" id="home">
                     <div class="container">
 
                         <!-- Hero Content -->
                         <div class="home-content">
                             <div class="wow fadeInUpShort" data-wow-delay=".2s">
                                 <h1 class="mt-xs-60 mb-xs-60" data-i18n="reg_hero">...</h1>
-
                             </div>
                         </div>
                         <!-- End Hero Content -->
@@ -146,125 +141,97 @@
 
                                 <p class="lead" data-i18n="reg_p2">...</p>
 
-                                <p class="lead" data-i18n="reg_p3">...</p>
-
-                                <!--
+                                <!-- Botón de inscripción -->
                                 <div class="align-center mb-40">
                                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5G0__GpC5eXt2LsxHStvSqGvdjGj6zf_d7E9NuYvHqyW7sA/viewform?usp=header"
-                                        class="btn btn-dark btn-round ">Inscríbete aquí</a>
+                                        class="btn btn-dark btn-round" data-i18n="reg_btn">...</a>
                                 </div>
 
-                                <h3>Tarifas de inscripción</h3>
+                                <!-- Tabla de tarifas -->
+                                <h3 data-i18n="reg_fees_h">...</h3>
                                 <table width="100%" class="styled-table">
                                     <thead>
                                         <tr>
                                             <th>&nbsp;</th>
-                                            <th>
-                                                <strong>Hasta el <del>5</del> 8 de septiembre</strong>
-                                            </th>
-                                            <th>
-                                                <strong>Después del <del>5</del> 8 de septiembre</strong>
-                                            </th>
+                                            <th><strong data-i18n="reg_fees_before">...</strong></th>
+                                            <th><strong data-i18n="reg_fees_after">...</strong></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="first-col">Ordinaria </td>
+                                            <td class="first-col" data-i18n="reg_fee_standard">...</td>
                                             <td>350 €</td>
                                             <td>400 €</td>
                                         </tr>
                                         <tr>
-                                            <td class="first-col">Reducida<sup>*</sup> </td>
+                                            <td class="first-col"><span data-i18n="reg_fee_reduced">...</span><sup>*</sup></td>
                                             <td>250 €</td>
                                             <td>300 €</td>
                                         </tr>
                                         <tr>
-                                            <td class="first-col">Estudiante<sup>*</sup> </td>
+                                            <td class="first-col"><span data-i18n="reg_fee_student">...</span><sup>*</sup></td>
                                             <td>50 €</td>
                                             <td>100 €</td>
                                         </tr>
                                         <tr>
-                                            <td class="first-col">Oyente<sup>**</sup> </td>
+                                            <td class="first-col"><span data-i18n="reg_fee_listener">...</span><sup>**</sup></td>
                                             <td>0 €</td>
                                             <td>0 €</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <p><sup>*</sup>No incluye la cena del congreso<br>
-                                    <sup>**</sup>Sin publicación en las actas del congreso
+                                <p>
+                                    <span data-i18n="reg_fee_note1">...</span><br>
+                                    <span data-i18n="reg_fee_note2">...</span>
                                 </p>
 
-                                <p class="lead">
-                                    Para que el alta sea efectiva, se debe enviar por correo electrónico a <a href="mailto:cev@secivi.org">cev@secivi.org</a> el justificante
-                                    de pago de la inscripción en cualquiera de los siguientes formatos: PDF, JPEG, GIF,
-                                    TIFF o PNG.
-                                    El pago debe realizarse a la siguiente cuenta:
-                                </p>
+                                <!-- Instrucciones de pago -->
+                                <p class="lead" data-i18n="reg_payment_p">...</p>
 
                                 <table width="800" border="0" align="top" cellpadding="2" cellspacing="1"
                                     style="margin-bottom:2em">
                                     <tr valign="top">
-                                        <td class="lead" width="242">Banco de Santander:</td>
-                                        <td class="lead" width="547"></td>
+                                        <td class="lead" width="242" data-i18n="reg_bank_lbl">...</td>
+                                        <td class="lead" width="547" data-i18n="reg_bank_val">...</td>
                                     </tr>
                                     <tr valign="top">
                                         <td class="lead">IBAN:</td>
                                         <td class="lead izq">ES18 0049 4476 0229 1000 5755</td>
                                     </tr>
                                     <tr valign="top">
-                                        <td class="lead">Beneficiario:</td>
-                                        <td class="lead izq">Sociedad Española para las Ciencias del Videojuego
-                                        </td>
+                                        <td class="lead" data-i18n="reg_beneficiary_lbl">...</td>
+                                        <td class="lead izq" data-i18n="reg_beneficiary_val">...</td>
                                     </tr>
                                     <tr valign="top">
-                                        <td class="lead">Concepto:</td>
-                                        <td class="lead izq">Nombre y Apellidos - CEV'26</td>
+                                        <td class="lead" data-i18n="reg_concept_lbl">...</td>
+                                        <td class="lead izq" data-i18n="reg_concept_val">...</td>
                                     </tr>
                                 </table>
 
-                                <p class="lead">
-                                    <p />
-                                <p class="lead">
-                                    Por si fuera necesario para realizar el pago, los datos del beneficiario
-                                    son:
-                                </p>
+                                <p class="lead" data-i18n="reg_extra_p">...</p>
 
                                 <table width="800" border="0" align="top" cellpadding="2" cellspacing="1"
                                     style="margin-bottom:2em">
                                     <tr valign="top">
-                                        <td class="lead" width="242">Nombre:</td>
-                                        <td class="lead izq" width="547">Sociedad Española para las Ciencias del
-                                            Videojuego</td>
+                                        <td class="lead" width="242" data-i18n="reg_name_lbl">...</td>
+                                        <td class="lead izq" width="547" data-i18n="reg_name_val">...</td>
                                     </tr>
                                     <tr valign="top">
                                         <td class="lead">CIF:</td>
                                         <td class="lead izq">G86892908</td>
                                     </tr>
                                     <tr valign="top">
-                                        <td class="lead">Domicilio fiscal:</td>
-                                        <td class="lead izq">C/ Profesor José García Santesmases, 9 - 28040 -
-                                            Madrid
-                                        </td>
+                                        <td class="lead" data-i18n="reg_address_lbl">...</td>
+                                        <td class="lead izq" data-i18n="reg_address_val">...</td>
                                     </tr>
                                 </table>
-                                -->
+                            
                             </div>
                             
                         </div>
-                        
 
                         <hr />
-                        
-
-                        <!-- <div class="row">
-                            <div class="col-md-8 offset-md-2 wow fadeInLeft">
-                                <h2>Alojamiento</h2>
-                                (TBA)
-
-                                
-                            </div>
-                        </div> -->
 
                     </div>
                     </div>
@@ -279,32 +246,29 @@
             <footer class="page-section bg-dark light-content footer pb-100 pb-sm-50">
                 <div class="container">
                     
-                            <!-- Footer Logo -->
-        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.5s">
-          <a href="http://secivi.org" target="_blank"><img src="img/secivi-white.png" width="256" alt="SECiVi" /></a>
-        </div>
-        <!-- End Footer Logo -->
+                    <!-- Footer Logo -->
+                    <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.5s">
+                        <a href="http://secivi.org" target="_blank"><img src="img/secivi-white.png" width="256" alt="SECiVi" /></a>
+                    </div>
+                    <!-- End Footer Logo -->
 
-                
                     <!-- Footer Text -->
                     <div class="footer-text">
-                        
                         <!-- Copyright -->
                         <div class="footer-copy">
                             © SECiVi 2026.
                         </div>
                         <!-- End Copyright -->
-                        
                     </div>
                     <!-- End Footer Text --> 
                     
-                 </div>
-                 
-                 <!-- Top Link -->
-                 <div class="local-scroll">
-                     <a href="#top" class="link-to-top"><i class="link-to-top-icon"></i><span class="sr-only">Scroll to top</span></a>
-                 </div>
-                 <!-- End Top Link -->
+                </div>
+                
+                <!-- Top Link -->
+                <div class="local-scroll">
+                    <a href="#top" class="link-to-top"><i class="link-to-top-icon"></i><span class="sr-only">Scroll to top</span></a>
+                </div>
+                <!-- End Top Link -->
                  
             </footer>
             <!-- End Footer -->
@@ -337,7 +301,6 @@
         <script src="js/jquery.ajaxchimp.min.js"></script>
         <script src="js/objectFitPolyfill.min.js"></script>
         <script src="js/splitting.min.js"></script>
-        
-            <script src="js/i18n.js"></script>
+        <script src="js/i18n.js"></script>
     </body>
 </html>
